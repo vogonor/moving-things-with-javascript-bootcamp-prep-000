@@ -20,7 +20,7 @@ document.addEventListener('keydown', function(e) {
     } else if (e.which === 39) {
       var rightNumbers = dodger.style.right.replace('px', '')
       var right = parseInt(rightNumbers, 10)
-      dodger.style.rightNumbers = `${right + 1}px`
+      dodger.style.rightNumbers = `${right + 1}px` //?
     }
   })
 
