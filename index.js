@@ -13,16 +13,15 @@ dodger.style.bottom = '0px'
 
 document.addEventListener('keydown', function(e) {
   if (e.which === 37) {
-    var leftNumbers = dodger.style.left.replace('px', '')
-    var left = parseInt(leftNumbers, 10)
+      var leftNumbers = dodger.style.left.replace('px', '')
+      var left = parseInt(leftNumbers, 10)
  
-    dodger.style.left = `${left - 1}px`
-  } else {
-    if (e.which === 39) {
-    var RightNumbers = dodger.style.left.replace('px', '')
-    var left = parseInt(leftNumbers, 10)
-  }
-})
+      dodger.style.left = `${left - 1}px`
+    } else if (e.which === 39) {
+      var rightNumbers = dodger.style.right.replace('px', '')
+      var right = parseInt(rightNumbers, 10)
+    }
+  })
 
 var dodger = document.getElementById('dodger')
 
