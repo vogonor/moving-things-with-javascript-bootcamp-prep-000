@@ -7,9 +7,9 @@ dodger.style.bottom // "0px"
 dodger.style.bottom = '100px'
 dodger.style.bottom = '0px'
 
-document.addEventListener('keydown', function(e) {
-  console.log(e.which)
-})
+// document.addEventListener('keydown', function(e) {
+//   console.log(e.which)
+// })
 
 document.addEventListener('keydown', function(e) {
   if (e.which === 37) {
@@ -17,6 +17,8 @@ document.addEventListener('keydown', function(e) {
     var left = parseInt(leftNumbers, 10)
  
     dodger.style.left = `${left - 1}px`
+  } else {
+    i
   }
 })
 
@@ -35,7 +37,7 @@ function moveDodgerRight() {
   var RightNumbers = dodger.style.moveDodgerRight.replace('px', '')
   var right = parseInt(rightNumbers, 10)
  
-  if (right > 0) {
+  if (right === 0) {
     dodger.style.right = `${right - 1}px`
   }
 }
